@@ -1,0 +1,40 @@
+/*css file for r markdown*/
+
+/*# text*/
+h1, h2, h3, h4 {
+  color:#0991DE;
+}
+
+/*non-# text*/
+p {
+  color:#383D3B;
+}
+
+.title, .subtitle{
+  text-align:center;
+}
+
+.date{
+  color:#383D3B;
+  text-align:center;
+}
+
+.author{
+  font-style:italic;
+  color:#383D3B;
+  text-align:center;
+}
+
+/*code chunk text*/
+.r{
+  color: blue;
+  font-variant:normal;
+}
+
+/*Function syntax*/
+.hljs-keyword{
+  color: blue;
+  font-style:italic;
+}
+
+

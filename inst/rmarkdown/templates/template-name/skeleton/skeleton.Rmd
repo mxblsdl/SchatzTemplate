@@ -1,0 +1,54 @@
+---
+title: "Data Analysis"
+subtitle: "SERC Project"
+author: "SERC Researcher"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: false
+  #  code_folding: "hide"
+    css: style.css
+---
+```{r echo=F}
+htmltools::img(src = knitr::image_uri("serc.png"),
+               alt = "logo",
+               style = 'position:absolute; top:0; right:0; padding:10px;')
+```
+
+# Overview
+
+What is this markdown about?
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = F)
+options(stringsAsFactors = F)
+```
+***
+
+# Load Libraries
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+# Load Data
+
+```{r}
+
+```
+
+# Analysis
+
+```{r}
+
+```
+
+# Summary Plots
+
+```{r}
+
+```
+
