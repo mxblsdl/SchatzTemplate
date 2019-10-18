@@ -7,7 +7,7 @@ output:
   html_document:
     toc: true
     toc_float: false
-    code_folding: false
+  #  code_folding: "hide" # only works for HTML output
     css: style.css
 ---
 ```{r echo=F}
@@ -16,15 +16,19 @@ htmltools::img(src = knitr::image_uri("serc.png"),
                style = 'position:absolute; top:0; right:0; padding:10px;')
 ```
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = F)
+
+# For R projects
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+options(stringsAsFactors = F)
+```
+
 # Overview
 
 What is this markdown about?
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_chunk$set(message = F)
-options(stringsAsFactors = F)
-```
 ***
 
 # Load Libraries

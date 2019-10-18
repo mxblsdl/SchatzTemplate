@@ -1,11 +1,10 @@
 Package: schatzMarkdown
 Type: Package
-Title: Provides a couple R markdown templates
+Title: Some Markdown Templates
 Version: 0.1.0
 Author: Max Blasdel
-Maintainer: The package maintainer <mab61@humboldt.edu>
-Description: Testing out templates
-    Use four spaces when indenting paragraphs within the Description.
-License: Schatz Center creative commons
+Maintainer: <maxblasdel@gmail.com>
+Description: My first package that is R markdown templates
+License: GNU
 Encoding: UTF-8
 LazyData: true
