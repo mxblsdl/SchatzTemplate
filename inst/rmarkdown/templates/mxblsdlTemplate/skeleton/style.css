@@ -1,0 +1,49 @@
+/*css file for r markdown*/
+
+/*body*/
+body {
+  background-color: #E7D2B7;
+}
+/*# text*/
+h1, h2, h3, h4 {
+  color:#541F0E;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+/*non-# text*/
+p {
+  color:#A45E60;
+}
+
+.title, .subtitle{
+  text-align:center;
+}
+
+.date{
+  color:#CD8B34;
+  text-align:center;
+}
+
+.author{
+  font-style:italic;
+  color:#CD8B34;
+  text-align:center;
+}
+
+/*code chunk text*/
+.r{
+  color: blue;
+  font-variant:normal;
+}
+
+/*Function syntax*/
+.hljs-keyword{
+  color: blue;
+  font-style:italic;
+}
+
+/*Link color*/
+a {
+  color: #A45E60;
+}
+

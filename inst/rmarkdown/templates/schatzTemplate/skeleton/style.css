@@ -1,8 +1,13 @@
 /*css file for r markdown*/
 
+/*body*/
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
 /*# text*/
 h1, h2, h3, h4 {
-  color:#0991DE;
+  color:#4F81B5;
 }
 
 /*non-# text*/
@@ -15,26 +20,30 @@ p {
 }
 
 .date{
-  color:#383D3B;
+  color:#6AB0FA;
   text-align:center;
 }
 
 .author{
   font-style:italic;
-  color:#383D3B;
+  color:#6AB0FA;
   text-align:center;
 }
 
 /*code chunk text*/
 .r{
-  color: blue;
+  color: #0991DE;
   font-variant:normal;
+  background-color:#FAFAFA;
+  border-radius: 15px;
 }
 
 /*Function syntax*/
 .hljs-keyword{
-  color: blue;
+  color: #0991DE;
   font-style:italic;
 }
 
-
+a {
+  text-decoration:underline;
+}

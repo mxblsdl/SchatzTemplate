@@ -1,0 +1,64 @@
+---
+title: "Data Analysis"
+subtitle: "Project"
+author: "Max Blasdel"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: false
+  #  code_folding: "hide" # only works for HTML output
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = F)
+
+# For R projects
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+options(stringsAsFactors = F,
+        scipen = 20)
+```
+
+```{r include=FALSE, message=FALSE, warning=F}
+library(ggplot2)
+library(dplyr)
+library(fontawesome) # for fun icons
+```
+
+#`r fa("angle-double-right", fill = "#541F0E")` Overview
+
+What is this markdown about?
+
+***
+
+
+#`r fa("database", fill = "#541F0E")` Load Data
+***
+Load all of the data that will be used in this analysis
+```{r}
+
+```
+
+# `r fa("r-project", fill = "#541F0E")` Analysis
+***
+The bulk of the document
+```{r}
+
+```
+
+#`r fa("chart-pie", fill = "#541F0E")` Summary Plots
+***
+Summarize the data with a few informative plots
+```{r}
+
+```
+
+#`r fa("marker", fill = "#541F0E")` Write Results
+***
+Only write out results at the end of the script. Hold back from writing any kind of intermediate data
+```{r eval=FALSE}
+
+```
+
