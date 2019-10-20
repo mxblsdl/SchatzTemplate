@@ -9,6 +9,8 @@ output:
     toc_float: false
   #  code_folding: "hide" # only works for HTML output
     css: style.css
+    self_contained: yes
+    mode: selfcontained 
 ---
 <script>
    $(document).ready(function() {

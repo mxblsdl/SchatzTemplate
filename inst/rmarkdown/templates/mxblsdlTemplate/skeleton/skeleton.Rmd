@@ -9,19 +9,39 @@ output:
     toc_float: false
   #  code_folding: "hide" # only works for HTML output
     css: style.css
+    self_contained: yes
+    mode: selfcontained 
 ---
 
 ```{r setup, include=FALSE}
+# chunk options
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(message = F)
+knitr::opts_chunk$set(tidy = T)
+knitr::opts_chunk$set(comment = NA)
+
+# global options
+options(stringsAsFactors = F,
+        scipen = 20)
 
 # For R projects
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
-options(stringsAsFactors = F,
-        scipen = 20)
+
+# set graph themes
+library(ggplot2)
+theme_set(theme_minimal() +
+            theme(text = element_text(size = 18),
+                  legend.position = "bottom",
+                  panel.background = element_rect(color = "#D5C1BA",
+                                                  fill = "#D5C1BA"),
+                  plot.background = element_rect(color = "#D5C1BA",
+                                                  fill = "#D5C1BA"),
+                  panel.grid.major = element_blank(),
+                  panel.grid.minor = element_blank(),
+                  axis.line = element_line(colour = "#533A1B")))
 ```
 
-```{r include=FALSE, message=FALSE, warning=F}
+```{r include=T, message=FALSE, warning=F}
 library(ggplot2)
 library(dplyr)
 library(fontawesome) # for fun icons
@@ -52,7 +72,8 @@ The bulk of the document
 ***
 Summarize the data with a few informative plots
 ```{r}
-
+ggplot() +
+  geom_point(data = mtcars, aes(mpg, wt))
 ```
 
 #`r fa("marker", fill = "#541F0E")` Write Results

@@ -32,13 +32,15 @@ p {
 
 /*code chunk text*/
 .r{
-  color: blue;
+  color: #BA7B3C;
   font-variant:normal;
+  background-color: #D7D7D7;
+  border-radius:15px;
 }
 
 /*Function syntax*/
 .hljs-keyword{
-  color: blue;
+  color: #A12E27;
   font-style:italic;
 }
 
